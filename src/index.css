@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+/* Basic tokens */
+:root{
+  --primary: #5f2626;
+  --accent: #ef8a61;
+  --soft: #faf1ee;
+  --rose: #f6d9d6;
+}
+
+body {
+  @apply bg-[var(--soft)] text-[var(--primary)] antialiased;
+  font-family: Inter, ui-sans-serif, system-ui;
+}
+
+/* Headings use Playfair */
+h1,h2,h3,h4 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* utilities */
+.rounded-oval {
+  border-radius: 9999px;
+}
