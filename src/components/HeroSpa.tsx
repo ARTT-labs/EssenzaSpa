@@ -25,7 +25,7 @@ export default function HeroSpa() {
               smooth
               duration={500}
               offset={-60}
-              className="rounded px-6 py-3 bg-[var(--accent)] text-white shadow"
+              className="rounded px-6 py-3 bg-[var(--accent)] text-white shadow cursor-pointer  hover:bg-[var(--accent)]/80"
             >
               Agende sua avaliação gratuita
             </Link>
@@ -34,7 +34,7 @@ export default function HeroSpa() {
               smooth
               duration={500}
               offset={-60}
-              className="rounded px-6 py-3 border border-primary text-primary"
+              className="rounded px-6 py-3 border border-primary text-primary cursor-pointer hover:bg-white/30 "
             >
               Conheça nossos tratamentos
             </Link>

@@ -73,7 +73,7 @@ export default function ContactForm() {
                 <button
                   type="submit"
                   disabled={status === "sending"}
-                  className="px-5 py-3 bg-[var(--accent)] text-white rounded"
+                  className="px-5 py-3 bg-[var(--accent)] text-white rounded cursor-pointer hover:bg-[var(--accent)]/80"
                 >
                   Enviar mensagem
                 </button>

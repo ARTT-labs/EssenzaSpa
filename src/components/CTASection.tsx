@@ -25,7 +25,7 @@ export default function CTASection() {
               smooth
               duration={500}
               offset={-60}
-              className="rounded px-6 py-3 bg-[var(--accent)] text-white"
+              className="cursor-pointer rounded px-6 py-3 bg-[var(--accent)] text-white hover:underline"
             >
               Agendar Consulta Gratuita
             </Link>

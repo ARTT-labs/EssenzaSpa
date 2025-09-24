@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer className="bg-[var(--primary)] text-white py-8 mt-12">
-      <div className="w-full mx-auto px-6 flex flex-col md:flex-row justify-between">
+      <div className="w-full mx-auto px-8 flex flex-col md:flex-row justify-between">
         <div>
           <h4 className="font-serif text-xl">Essenza</h4>
           <p className="text-sm mt-2 text-white/80">
