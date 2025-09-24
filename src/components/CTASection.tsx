@@ -1,5 +1,5 @@
-import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 export default function CTASection() {
   return (
@@ -11,7 +11,7 @@ export default function CTASection() {
           className="bg-[var(--accent)] text-white rounded-3xl p-10 md:flex items-center justify-between gap-8"
         >
           <div>
-            <h4 className="text-2xl font-serif">
+            <h4 className="text-3xl font-serif">
               Pronta para transformar sua pele?
             </h4>
             <p className="mt-2 text-sm text-white/90">
@@ -20,12 +20,15 @@ export default function CTASection() {
             </p>
           </div>
           <div className="mt-6 md:mt-0">
-            <a
-              href="#contact"
+            <Link
+              to="contact"
+              smooth
+              duration={500}
+              offset={-60}
               className="rounded px-6 py-3 bg-[var(--accent)] text-white"
             >
               Agendar Consulta Gratuita
-            </a>
+            </Link>
           </div>
         </motion.div>
       </div>

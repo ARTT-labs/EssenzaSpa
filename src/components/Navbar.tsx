@@ -1,20 +1,23 @@
-import React from "react";
 import { Link } from "react-scroll";
 import { Link as RouterLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <header className="fixed w-full bg-white/80 backdrop-blur z-50 shadow-sm">
-      <div className="max-w-7xl mx-auto flex items-center justify-between p-4">
-        <RouterLink to="/spa" className="text-2xl font-serif text-primary">
-          Essenza
-        </RouterLink>
-        <nav className="hidden md:flex gap-6 items-center">
+    <header className="fixed top-0 left-0 w-full flex items-center justify-between px-8 h-16 bg-white/80 backdrop-blur z-50 shadow-md">
+      <RouterLink
+        to="/spa"
+        className="text-2xl font-serif text-primary flex-shrink-0"
+      >
+        Essenza
+      </RouterLink>
+      <nav className="absolute left-1/2 transform -translate-x-1/2">
+        <div className="gap-8 flex">
           <Link
             to="home"
             smooth
             duration={500}
-            className="cursor-pointer text-sm"
+            offset={-60}
+            className="cursor-pointer text-lg"
           >
             Home
           </Link>
@@ -22,7 +25,8 @@ export default function Navbar() {
             to="services"
             smooth
             duration={500}
-            className="cursor-pointer text-sm"
+            offset={-60}
+            className="cursor-pointer text-lg"
           >
             Tratamentos
           </Link>
@@ -30,7 +34,8 @@ export default function Navbar() {
             to="why"
             smooth
             duration={500}
-            className="cursor-pointer text-sm"
+            offset={-60}
+            className="cursor-pointer text-lg"
           >
             Por que escolher
           </Link>
@@ -38,33 +43,23 @@ export default function Navbar() {
             to="testimonials"
             smooth
             duration={500}
-            className="cursor-pointer text-sm"
+            offset={-60}
+            className="cursor-pointer text-lg"
           >
             Depoimentos
           </Link>
-          <Link
-            to="contact"
-            smooth
-            duration={500}
-            className="cursor-pointer text-sm"
-          >
-            Contato
-          </Link>
-          <RouterLink
-            to="/interiores"
-            className="ml-4 px-3 py-2 rounded bg-[var(--accent)] text-white text-sm"
-          >
-            Interiores
-          </RouterLink>
-        </nav>
-        <div className="md:hidden">
-          <RouterLink
-            to="/spa#contact"
-            className="px-3 py-2 rounded bg-[var(--accent)] text-white text-sm"
-          >
-            Contato
-          </RouterLink>
         </div>
+      </nav>
+      <div>
+        <Link
+          to="contact"
+          smooth
+          duration={500}
+          offset={-60}
+          className="cursor-pointer px-3 py-2 rounded bg-[var(--accent)] text-white text-lg "
+        >
+          Contato
+        </Link>
       </div>
     </header>
   );

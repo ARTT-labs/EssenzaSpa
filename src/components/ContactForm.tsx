@@ -38,8 +38,8 @@ export default function ContactForm() {
             />
           </div>
           <div className="bg-white p-8 rounded-xl shadow">
-            <h3 className="text-2xl font-serif">Entre em contato</h3>
-            <p className="mt-2 text-sm text-slate-700">
+            <h3 className="text-3xl font-serif">Entre em contato</h3>
+            <p className="mt-2 text-base text-slate-700">
               Preencha o formulário abaixo e nossa equipe retornará o mais breve
               possível.
             </p>
@@ -48,7 +48,7 @@ export default function ContactForm() {
                 name="name"
                 required
                 className="w-full border p-3 rounded"
-                placeholder="Full name"
+                placeholder="Nome completo"
               />
               <input
                 name="email"
@@ -60,14 +60,14 @@ export default function ContactForm() {
               <input
                 name="phone"
                 className="w-full border p-3 rounded"
-                placeholder="Phone number"
+                placeholder="Número de telefone"
               />
               <textarea
                 name="message"
                 required
                 rows={4}
                 className="w-full border p-3 rounded"
-                placeholder="Message"
+                placeholder="Mensagem"
               ></textarea>
               <div className="flex items-center gap-4">
                 <button

@@ -1,5 +1,3 @@
-import React from "react";
-
 const team = [
   {
     name: "Michael Kim",
@@ -22,7 +20,7 @@ export default function Team() {
   return (
     <section className="py-12">
       <div className="max-w-6xl mx-auto px-6 text-center">
-        <h3 className="text-2xl font-serif">Meet our skincare experts</h3>
+        <h3 className="text-3xl font-serif">Conheça nossa equipe</h3>
         <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
           {team.map((m) => (
             <div key={m.name} className="bg-white p-6 rounded-lg shadow">

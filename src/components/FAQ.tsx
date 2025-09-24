@@ -1,5 +1,3 @@
-import React from "react";
-
 const items = [
   {
     q: "O que é a terapia de hidratação?",
@@ -23,14 +21,14 @@ export default function FAQ() {
   return (
     <section className="py-12">
       <div className="max-w-4xl mx-auto px-6">
-        <h3 className="text-2xl font-serif text-center">
+        <h3 className="text-3xl font-serif text-center">
           Perguntas frequentes
         </h3>
         <div className="mt-6 space-y-4">
           {items.map((it, idx) => (
             <details key={idx} className="bg-[var(--rose)] p-4 rounded-xl">
               <summary className="cursor-pointer font-medium">{it.q}</summary>
-              <p className="mt-2 text-sm text-slate-700">{it.a}</p>
+              <p className="mt-2 text-base text-slate-700">{it.a}</p>
             </details>
           ))}
         </div>

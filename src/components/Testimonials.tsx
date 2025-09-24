@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 
 const testimonials = [
@@ -20,7 +19,7 @@ export default function Testimonials() {
   return (
     <section id="testimonials" className="py-16 bg-[var(--soft)]">
       <div className="max-w-6xl mx-auto px-6 text-center">
-        <h3 className="text-2xl font-serif">O que nossas clientes dizem</h3>
+        <h3 className="text-3xl font-serif">O que nossas clientes dizem</h3>
         <div className="mt-8 grid md:grid-cols-3 gap-6">
           {testimonials.map((t, i) => (
             <motion.div

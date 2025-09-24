@@ -14,7 +14,7 @@ export default function SpaLanding() {
   return (
     <>
       <Navbar />
-      <main className="pt-16">
+      <main>
         <HeroSpa />
         <Treatments />
         <WhyTrust />

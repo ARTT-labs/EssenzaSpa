@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 
 export default function WhyTrust() {
@@ -13,7 +12,7 @@ export default function WhyTrust() {
           className="w-80 rounded-full object-cover shadow"
         />
         <div>
-          <h3 className="text-2xl font-serif">Por que escolher a Essenza?</h3>
+          <h3 className="text-3xl font-serif">Por que escolher a Essenza?</h3>
           <p className="mt-4 text-slate-600">
             Nossa equipe une experiência, tecnologia e dedicação para oferecer
             resultados seguros, naturais e duradouros.
