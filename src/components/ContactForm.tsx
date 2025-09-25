@@ -29,8 +29,8 @@ export default function ContactForm() {
   return (
     <section id="contact" className="py-16 bg-[var(--soft)]">
       <div className="max-w-5xl mx-auto px-6">
-        <div className="grid md:grid-cols-2 gap-8 items-center">
-          <div>
+        <div className="grid md:grid-cols-2 gap-8 items-center ">
+          <div className="hidden md:block">
             <img
               src="/images/treatment-1.jpg"
               alt="contact"

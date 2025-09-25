@@ -8,11 +8,12 @@ export default function Antiacne() {
       <Navbar />
       <main className="pt-16">
         {/* Hero */}
-        <section className="min-h-[80vh] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center px-6 md:px-12 py-12">
+        <section className="min-h-[80vh] grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-12">
           <motion.div
             initial={{ x: -40, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8 }}
+            className="px-6 sm:px-8 md:pl-12 lg:pl-24 md:pr-8"
           >
             <h1 className="text-4xl md:text-5xl font-serif text-primary leading-tight">
               Soluções Antiacne
@@ -36,7 +37,7 @@ export default function Antiacne() {
             initial={{ scale: 0.95, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.9 }}
-            className="flex justify-center"
+            className="h-full justify-end hidden md:flex"
           >
             <img
               src="/images/antiacne-hero.jpg"

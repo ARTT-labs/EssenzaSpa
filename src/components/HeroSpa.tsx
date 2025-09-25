@@ -4,12 +4,12 @@ import { Link } from "react-scroll";
 export default function HeroSpa() {
   return (
     <section id="home">
-      <div className=" mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center pb-12 pl-12 ">
+      <div className=" grid grid-cols-1 md:grid-cols-2 gap-8 items-center ">
         <motion.div
           initial={{ x: -40, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8 }}
-          className="pt-12"
+          className="pt-24 pb-12 px-6 sm:px-8 md:pl-12 lg:pl-24 md:pr-8"
         >
           <h1 className="text-4xl md:text-5xl font-serif text-primary leading-tight">
             Realce sua beleza com cuidado, bem-estar e tecnologia.
@@ -45,7 +45,7 @@ export default function HeroSpa() {
           initial={{ scale: 0.95, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.9 }}
-          className="h-full flex justify-end"
+          className="h-full justify-end hidden md:flex"
         >
           <img
             src="/images/spa-hero.jpg"
